@@ -1,13 +1,8 @@
 from requests_toolbelt import MultipartEncoder
 import requests
 import json
-import ast
-import subprocess
-import sys
-import sqlite3
-sys.path.append("db")
-import answer_storage2
-from flask import Flask, jsonify, Response, request
+
+from flask import Flask, jsonify, request
 from flask_cors import CORS, cross_origin
 
 """
