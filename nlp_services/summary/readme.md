@@ -4,8 +4,7 @@
 
 ## Запуск
 ```
-cd ..
-uvicorn --host HOST --port PORT summary:app
+uvicorn --host HOST --port PORT src:app
 ```
 
 ## Документация
