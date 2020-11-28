@@ -49,9 +49,10 @@ async def check_mail(item: Item):
     with MailBox('imap.gmail.com').login(username, password, initial_folder='Inbox') as mailbox:
         for msg in mailbox.fetch(AND(seen=False)):
             text = msg.text
-            topic = requests.get("http://0.0.0.0:6666/api?text={}".format(text))
-            if not mailbox.folder.exists(topic):
-                mailbox.folder.create(topic)
-            mailbox.move(msg.uid, topic)
+            topic = requests.get("http://127.0.0.1:7000/api?item={}".format(text))
+            print(topic.json())
+            if not mailbox.folder.exists(topic.json()):
+                mailbox.folder.create(topic.json())
+            mailbox.move(msg.uid, topic.json())
 
     return "ok"
