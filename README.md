@@ -4,6 +4,8 @@
 
 ![](system.PNG)
 
+Ссылка на макеты интерфейса в Figma - [SberMailAssistant](https://www.figma.com/file/kpsJuugprAvlZdpXANz083/SberMailAssis-2.0?node-id=109%3A6)
+
 Подробнее о каждом из компонентов:
 
 1. **Почтовый клиент.**
