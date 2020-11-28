@@ -50,7 +50,6 @@ async def check_mail(item: Item):
         for msg in mailbox.fetch(AND(seen=False)):
             text = msg.text
             topic = requests.get("http://127.0.0.1:7000/api?item={}".format(text))
-            print(topic.json())
             if not mailbox.folder.exists(topic.json()):
                 mailbox.folder.create(topic.json())
             mailbox.move(msg.uid, topic.json())
