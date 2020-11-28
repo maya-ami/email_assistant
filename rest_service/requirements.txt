@@ -1,0 +1,5 @@
+imap-tools==0.32.0
+uvicorn==0.12.3
+fastapi==0.61.2
+pydantic==1.7.2
+requests==2.22.0
