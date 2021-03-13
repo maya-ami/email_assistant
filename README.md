@@ -1,3 +1,5 @@
+## Top-5 solution for a final round of a nation-wide hackathon ["Digital Breakthrough"](https://leadersofdigital.ru)
+
 ## Команда НеИИ
 
 Общая архитектура решения:
