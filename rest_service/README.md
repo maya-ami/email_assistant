@@ -1,14 +1,14 @@
 ## Mail Rest Service.
-- Подключается к почтовому ящику по протоколу IMAP.:heavy_check_mark:
-- Отправляет непрочитанные в NLP и NLG сервисы.:heavy_check_mark:
-- Получает от сервисов ответ и передает информацию на клиент.:heavy_check_mark:
+- Connects to email via IMAP.:heavy_check_mark:
+- Sends unread mails to NLP and NLG services and receives answers.:heavy_check_mark:
+- Creates emails folders and sorts mails based on topics.:heavy_check_mark:
 
-## Запуск
+## Usage
 ```
 uvicorn --host HOST --port PORT src:app
 ```
 
-## Документация
-Документация API доступна по адресу http://HOST:PORT/redoc
+## Docs
+API documentation is at http://HOST:PORT/redoc
 
 ![](doc.PNG)

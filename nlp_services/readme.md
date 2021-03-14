@@ -1,7 +1,7 @@
 ## Summary
 
-Сервис реферирования текста.
+Text summarization service (FastAPI).
 
 ## Topic
 
-Сервис классификации писем.
+Text classification service (FastAPI).

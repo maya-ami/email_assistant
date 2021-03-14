@@ -1,12 +1,12 @@
-## Голосовой помощник
+## Voice assistant
 
-ГП состоит из следующих компонентов:
-- asr_service - Сервис распознавания речи для голосового управления: набор ответа, голосовой поиск. [Подробнее](https://github.com/maya-ami/neii_hackathon2020/tree/master/voice_assistant/asr_service) :heavy_check_mark:
+VA consists of the following components:
+- [asr_service](voice_assistant/asr_service) - Speech recognition for voice control: voice typing emails, voice search, etc.:heavy_check_mark:
 
-- nlu_service - Сервис выделения интентов пользователя. **В РАЗРАБОТКЕ**
+- nlu_service - An intent classification service. **UNDER DEVELOPMENT**
 
-- tts_service - Сервис синтеза речи для . [Подробнее](https://github.com/maya-ami/neii_hackathon2020/tree/master/voice_assistant/tts_service) :heavy_check_mark:
+- [tts_service](voice_assistant/tts_service) - Text-to-speech synthesis saves time for reading emails for you.:heavy_check_mark:
 
 
-## Запуск
+## Usage
  ```python backend.py```

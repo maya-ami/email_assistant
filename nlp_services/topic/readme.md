@@ -1,14 +1,14 @@
-## Сервис классификации писем
-На клиенте письма раскидываются по папкам в зависимости от темы.
+## Email classification service
+On the client-side, emails are sorted into folders based on their topics.
 
-**NB**: в прототипе используется модель определения тональности текста. В проде заменить на релевантную модель классификации.
+**NB**: A sentiment analysis model is used for a prototype. Swap with a relevant model in production.
 
-## Запуск
+## Usage
 ```
 uvicorn --host HOST --port PORT src:app
 ```
 
-## Документация
-Документация API доступна по адресу http://HOST:PORT/redoc
+## Docs
+API documentation is at http://HOST:PORT/redoc
 
 ![](doc.PNG)

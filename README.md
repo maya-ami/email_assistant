@@ -1,31 +1,28 @@
 ## Top-5 solution for a final round of a nation-wide hackathon ["Digital Breakthrough"](https://leadersofdigital.ru)
 
-## Команда НеИИ
-
-Общая архитектура решения:
+A system's architecture:
 
 ![](architecture.PNG)
 
-Подробнее о каждом из компонентов:
+Details about each component:
 
-1. **Почтовый клиент.**
+1. **Concept of an email client.**
   ![](client.png)
 2. **Mail Rest Service.**
-  - Подключается к почтовому ящику по протоколу IMAP.:heavy_check_mark:
-  - Отправляет непрочитанные в NLP и NLG сервисы и получает ответ.:heavy_check_mark:
-  - Создает тематические папки. Раскладывает письма по папкам в соответствии с темой.:heavy_check_mark:
-3. **NLP сервисы.**
-  - [topic](https://github.com/maya-ami/neii_hackathon2020/tree/main/nlp_services/topic) - Определение темы письма. На клиенте письма раскидываются по папкам в зависимости от темы.:heavy_check_mark:
-  - [summary](https://github.com/maya-ami/neii_hackathon2020/tree/main/nlp_services/summary) - Реферирование текста. На клиенте вместо неинформативных преамбул типа "Добрый день, коллеги..." отображается суть письма в 1-2 фразах. Позволяет видеть суть без "проваливания" в каждую цепочку.:heavy_check_mark:
-  - importance - Определение важности. На клиенте письма, определенный как важные, отмечаются значком :fire: **В РАЗРАБОТКЕ**
-4. **NLG сервис.**
-  - Генерация возможного ответа. На клиенте выводится в диалоговом окне цепочки в качестве подсказки серым шрифтом. Отправка только по нажатию пользователя.
+  - Connects to email via IMAP.:heavy_check_mark:
+  - Sends unread mails to NLP and NLG services and receives answers.:heavy_check_mark:
+  - Creates emails folders and sorts mails based on topics.:heavy_check_mark:
+3. **NLP services.**
+  - [topic](nlp_services/topic) - Text classification.:heavy_check_mark:
+  - [summary](nlp_services/summary) - Text summarization. On the client-side, summary can be shown on hovering over a mail.:heavy_check_mark:
+4. **NLG service.**
+  - Generates a possible answer. On the client-side, a suggested reply can be shown in gray color. **UNDER DEVELOPMENT**
   ![](suggest_reply.PNG)
-5. **Голосовой помощник.**
+5. **Voice assistant.**
 
-  ГП состоит из следующих компонентов:
-  - [asr_service](https://github.com/maya-ami/neii_hackathon2020/tree/master/voice_assistant/asr_service) - Сервис распознавания речи для голосового управления: набор ответа, голосовой поиск.:heavy_check_mark:
+  VA consists of the following components:
+  - [asr_service](voice_assistant/asr_service) - Speech recognition for voice control: voice typing emails, voice search, etc.:heavy_check_mark:
 
-  - nlu_service - Сервис выделения интентов пользователя. **В РАЗРАБОТКЕ**
+  - nlu_service - An intent classification service. **UNDER DEVELOPMENT**
 
-  - [tts_service](https://github.com/maya-ami/neii_hackathon2020/tree/master/voice_assistant/tts_service)  - Сервис синтеза речи для озвучивания текстов писем.:heavy_check_mark:
+  - [tts_service](voice_assistant/tts_service) - Text-to-speech synthesis saves time for reading emails for you.:heavy_check_mark:

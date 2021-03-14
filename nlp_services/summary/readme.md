@@ -1,13 +1,12 @@
-## Сервис реферирования текста
+## Text summarization service
+Allows to obtain most important info in 2-3 sentences. The result is sent to the client-side where it can be shown on hovering over a mail. Thus, a user can get the gist without having to open a thread.
 
-Позволяет получить выжимку текста в 2-3 предложениях. Результат отдается на клиент. Позволяет пользователю видеть суть письма без "проваливания" в каждую цепочку.
-
-## Запуск
+## Usage
 ```
 uvicorn --host HOST --port PORT src:app
 ```
 
-## Документация
-Документация API доступна по адресу http://HOST:PORT/redoc
+## Docs
+API documentation is at http://HOST:PORT/redoc
 
 ![](doc.PNG)
