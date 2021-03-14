@@ -16,13 +16,14 @@ Details about each component:
   - [topic](nlp_services/topic) - Text classification.:heavy_check_mark:
   - [summary](nlp_services/summary) - Text summarization. On the client-side, summary can be shown on hovering over a mail.:heavy_check_mark:
 4. **NLG service.**
-  - Generates a possible answer. On the client-side, a suggested reply can be shown in gray. **UNDER DEVELOPMENT**
+  - Generates a possible answer. On the client-side, a suggested reply can be shown in gray.**UNDER DEVELOPMENT**
+  
   ![](suggest_reply.PNG)
 5. **Voice assistant.**
 
   VA consists of the following components:
   - [asr_service](voice_assistant/asr_service) - Speech recognition for voice control: voice typing emails, voice search, etc.:heavy_check_mark:
 
-  - nlu_service - An intent classification service. **UNDER DEVELOPMENT**
+  - nlu_service - An intent classification service.**UNDER DEVELOPMENT**
 
   - [tts_service](voice_assistant/tts_service) - Text-to-speech synthesis saves time for reading emails for you.:heavy_check_mark:
