@@ -16,7 +16,7 @@ Details about each component:
   - [topic](nlp_services/topic) - Text classification.:heavy_check_mark:
   - [summary](nlp_services/summary) - Text summarization. On the client-side, summary can be shown on hovering over a mail.:heavy_check_mark:
 4. **NLG service.**
-  - Generates a possible answer. On the client-side, a suggested reply can be shown in gray color. **UNDER DEVELOPMENT**
+  - Generates a possible answer. On the client-side, a suggested reply can be shown in gray. **UNDER DEVELOPMENT**
   ![](suggest_reply.PNG)
 5. **Voice assistant.**
 
