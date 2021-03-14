@@ -17,8 +17,9 @@ Details about each component:
   - [summary](nlp_services/summary) - Text summarization. On the client-side, summary can be shown on hovering over a mail.:heavy_check_mark:
 4. **NLG service.**
   - Generates a possible answer. On the client-side, a suggested reply can be shown in gray.**UNDER DEVELOPMENT**
-  
+
   ![](suggest_reply.PNG)
+  
 5. **Voice assistant.**
 
   VA consists of the following components:
